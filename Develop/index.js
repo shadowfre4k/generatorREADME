@@ -5,7 +5,7 @@ const fs = require("fs");
 const questions = [
   {
     type: "input",
-    name: "name",
+    name: "title",
     message: "Please enter the title of your project.",
   },
   {
@@ -61,10 +61,14 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile();
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions);
+}
 
 // Function call to initialize app
 init();
