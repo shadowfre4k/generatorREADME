@@ -1,14 +1,23 @@
 {
-  "name": "static-site",
+  "name": "generatorreadme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowfre4k/generatorREADME.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadowfre4k/generatorREADME/issues"
+  },
+  "homepage": "https://github.com/shadowfre4k/generatorREADME#readme",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "^8.2.4"
   }
 }
