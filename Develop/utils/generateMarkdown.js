@@ -1,5 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
+//take in license selection as a parameter and gives badges in aacordance to
 function renderLicenseBadge(license) {
   switch (license) {
     case `Apache License 2.0`:
@@ -29,8 +31,6 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   {
     // switch case for different licenses but since this is a reference they all say the same thing however
@@ -60,7 +60,7 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// creates README document and how it will be formatted
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseSection = renderLicenseSection(data.license);
@@ -105,6 +105,9 @@ ${data.description}
 
 ## Test
 
+  To View: 
+  https://drive.google.com/file/d/174R0Q_xL8tNd4hvZ2BBk-HAjP5t4ne2m/view
+
   ${data.testing}
 
 
@@ -114,8 +117,8 @@ If you have any questions please contact me with the information below!
 
   ${data.emailAddress}
 
-https://github.com/shadowfre4k${data.username}
+  https://github.com/${data.username}
 `;
 }
-
+//exports to modulate
 module.exports = generateMarkdown;
